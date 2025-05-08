@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package student;
+option go_package=".;student";
+
+// TODO:学生注册成员
+message StuRegisterRequest {
+  string Username = 1;
+  string Password = 2;
+  string Gender = 3;
+  string Phone = 5;
+  string Email = 6;
+}
+
+message StuRegisterResponse {
+  int64 StuID = 1;
+  string StuName = 2;
+  string Gender = 3;
+}
+
+service Student {
+  rpc StuRegister(StuRegisterRequest) returns(StuRegisterResponse);// TODO:学生注册服务
+}
