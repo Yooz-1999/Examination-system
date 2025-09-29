@@ -1,0 +1,6 @@
+Nacos:
+  SpaceId: "Kiwi"
+  Host: "14.103.149.192"
+  Port: 8848
+  DataId: "pravite-nacos"
+  Group: "pravite-nacos"
