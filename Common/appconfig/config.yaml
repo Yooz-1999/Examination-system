@@ -1,6 +1,6 @@
 Nacos:
-  SpaceId: "544c7bc6-d899-40cc-81ec-ab7733bdbc6f"
+  SpaceId: "Kiwi"
   Host: "14.103.149.192"
   Port: 8848
-  DataId: "bawei2209A"
-  Group: "bawei2209A"
+  DataId: "pravite-nacos"
+  Group: "pravite-nacos"
