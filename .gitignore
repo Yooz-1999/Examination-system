@@ -30,3 +30,4 @@ go.mod
 go.sum
 tmp
 Zap
+.idea
