@@ -23,3 +23,13 @@ func (s *Student) CreateUser() error {
 func (s *Student) FindUserByName(username string) error {
 	return global.DB.Where("username = ?", username).Limit(1).Find(&s).Error
 }
+
+// FindUserById 根据ID查询用户
+func (s *Student) FindUserById(userid int) error {
+	return global.DB.Where("id = ?", userid).Limit(1).Find(&s).Error
+}
+
+// UpdateUser 更新用户信息
+func (s *Student) UpdateUser() error {
+	return global.DB.Save(&s).Error
+}
